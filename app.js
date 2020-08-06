@@ -13,6 +13,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/',  require("./routes/index"))
 
-app.listen(3000, (res, req)=>{
+app.listen(process.env.PORT || 3000, (res, req)=>{
   console.log("App running at port 3000");
 })
