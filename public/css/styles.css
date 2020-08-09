@@ -137,24 +137,26 @@ div#backgroundDescriptionFinerBlue{
 /* Why Us Section ends */
 
 /* Our Services */
-.ourServices{
+.homeOurServices{
   text-align: center;
   background-color: #8cbcd0;
 padding-bottom: 2rem;
 }
 
-#ourServicesTitle{
+#homeOurServicesTitle{
   padding: 3rem 0;
 font-family: 'Kaushan Script', cursive;
 }
-.firstService{
+.homeFirstService{
+  margin: 1.2rem;
   background-color: #393f4d;
   color: white;
 }
-.secondService{
-
+.homeSecondService{
+margin: 1.2rem;
 }
-.thirdService{
+.homeThirdService{
+  margin: 1.2rem;
 background-color: #393f4d;
 color: white;
 
@@ -165,7 +167,7 @@ div.card{
 .icon-custom{
   font-size: 2rem;
 }
-.serviceTitle{
+.homeServiceTitle{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
@@ -173,12 +175,19 @@ div.card{
 
 /* Our Services ends */
 /* Contact us */
-#contactusCard{
+.homeContactCard{
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+#homeContactusCard{
   padding: 3rem 0;
 font-family: 'Kaushan Script', cursive;
 }
 
-.contactUsContent{
+.homeContactUsContent{
   font-family: 'Roboto', sans-serif;
 }
 /* End of Contact Us */
@@ -219,4 +228,74 @@ footer{
 
   }
 
+}
+
+
+/* End of Home Page Styling */
+
+/* Start of Services Page */
+#services{
+  text-align: center;
+}
+.boxOurServices{
+
+}
+
+#ourServicesTitle{
+  text-align: center;
+  padding: 3rem 0;
+  font-family: 'Kaushan Script', cursive;
+}
+.firstService{
+  justify-content: center;
+  margin: 1.2rem;
+  background-color: #393f4d;
+  color: white;
+}
+.secondService{
+margin: 1.2rem;
+}
+.thirdService{
+  margin: 1.2rem;
+background-color: #393f4d;
+color: white;
+}
+.serviceTitle{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.serviceIconCustom{
+  justify-content: center;
+  text-align: center !important;
+  font-size: 2rem;
+}
+.serviceTitle{
+  text-align: center;
+}
+
+/* End of Services Page */
+
+/* Start of Contact Us Page styling */
+.backgroundOfContactForm{
+  background-color: #05386B;
+  margin-top: 2rem;
+  border-radius: 20px 20px 0 0;
+}
+#leftOfContactForm{
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+ justify-content: center;
+ color:white;
+ padding-top: 7rem;
+}
+#contactForm{
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+#contactAddress{
+  margin-top: 5rem;
 }
