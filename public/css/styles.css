@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-body{
 
+.container-fluid{
+  padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 h2{
   font-size: 2.5rem;
 }
@@ -25,7 +28,10 @@ h2{
   background-image: url(sky.jpg);
   height: 100vh;
   background-size: cover;
+  justify-content: center;
 }
+
+
 
 #homeFirstFont{
   font-size: 3rem !important;
@@ -34,10 +40,12 @@ h2{
   color: #2d545e;
 }
 #homeFirstFontSub{
-  font-size: 1.5rem !important;
+  font-size: 2rem !important;
   font-weight:bold !important;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Kaushan Script', cursive;
   color: #269ccc;
+  padding: 1.2rem;
+  margin-top: 2rem;
 }
 
 
@@ -67,10 +75,10 @@ a.no-link-color{
 .whyWebsite{
   font-family: 'Roboto', sans-serif;
   color: black;
-  padding: 5rem 20rem;
+  padding: 3rem 5rem;
   background-color:#fceed1;
   display: flex;
-text-align: center;
+  text-align: center;
 
 }
 
@@ -207,21 +215,22 @@ footer{
 /* Extra small devices (phones, 900px and down) */
 @media only screen and (max-width: 900px) {
   #homeFirstFontSub{
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
     font-weight:lighter !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kaushan Script', cursive;
     color: white;
-    background-color: #393f4d;
+    /* background-color: #393f4d; */
     opacity: 0.7;
     border-radius: 1.2rem;
-    height: 2rem;
+
     align-items: center;
   }
 
   .whyWebsite{
     font-family: 'Roboto', sans-serif;
     color: black;
-    padding: 5rem;
+
+    padding:5rem 2rem 2rem 2rem;
     background-color:#fceed1;
     display: flex;
   text-align: center;
@@ -295,7 +304,10 @@ color: white;
   padding: 2rem;
   margin: 2rem;
 }
-
+#contactusCard{
+  font-family: 'Kaushan Script', cursive;
+}
 #contactAddress{
   margin-top: 5rem;
+
 }
