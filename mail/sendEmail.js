@@ -36,7 +36,8 @@ const title = `${req.body.messageSubject}`
     if(error){
       console.log(error);
     }else{
-      res.render("contact");
+
+      res.render("contact", {success: "Thank you. Your message has been successfully sent! One of our team members will contact you soon."});
     }
   });
 
