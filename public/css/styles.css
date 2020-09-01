@@ -1,320 +1,297 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;562&display=swap');
+body {}
 
-
-.container-fluid{
-  padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-h2{
-  font-size: 2.5rem;
+h2 {
+    font-size: 2.5rem;
 }
 
-
-
-.navbar-brand{
-  padding-right: 0;
-  text-align: right;
-  position:sticky;
+.navbar {
+    background-color: #5d535e;
 }
 
+#navbarTogglerMenu {
+    border: 1px solid #9a9eab;
 }
-.custom-toggler .navbar-toggler{
-  border-color: black !important;
-  font-size: 2rem;
+
+.navbar-brand {
+    padding-right: 0;
+    text-align: right;
+    position: sticky;
 }
-.homeScreenFirstBackgroundImage{
-  background-image: url(sky.jpg);
-  height: 100vh;
-  background-size: cover;
-  justify-content: center;
+
+.navbar-brand-text a {
+    color: white !important;
+    font-size: 25px;
 }
 
 
-
-#homeFirstFont{
-  font-size: 3rem !important;
-  font-weight:500 !important;
-  font-family: 'Raleway', sans-serif;
-  color: #2d545e;
 }
-#homeFirstFontSub{
-  font-size: 2rem !important;
-  font-weight:bold !important;
-  font-family: 'Kaushan Script', cursive;
-  color: #269ccc;
-  padding: 1.2rem;
-  margin-top: 2rem;
+.custom-toggler .navbar-toggler {
+    border-color: black !important;
+    font-size: 2rem;
 }
-
-
-#introHome{
-  padding-top: 10vh;
-  text-align: center;
+.homeScreenFirstBackgroundImage {
+    background-image: url("https://cdn.pixabay.com/photo/2015/06/01/00/20/man-792821_960_720.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
-
-#webBrand{
-  text-align: center;
-  padding-top: 9rem;
-  font-family: 'Raleway', sans-serif;
+.home-first-texts h1 {
+    font-size: 3rem !important;
+    font-weight: 600 !important;
+    font-family: 'Raleway', sans-serif;
+    color: white;
 }
-.scrollDown{
-font-size: 3rem;
-margin-top: 5rem;
-text-align: center;
-font-weight:lighter;
+.home-first-texts h2 {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+#introHome {
+    padding-top: 10vh;
+    text-align: center;
+}
+#WebBrand {
+    text-align: center;
+    padding-top: 12rem;
+    font-family: 'Raleway', sans-serif;
+    color: #dfe166;
+    font-weight: 400;
+}
+.scrollDown {
+    font-size: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: lighter;
 }
 
 /* Remove the blue color for links */
-a.no-link-color{
-  color: inherit;
+a.no-link-color {
+    color: inherit;
 }
+
 /* End: Remove the blue color for links */
-
-.whyWebsite{
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  padding: 3rem 5rem;
-  background-color:#fceed1;
-  display: flex;
-  text-align: center;
-
+.whyWebsite {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding: 5rem 20rem;
+    background-color: #b8d20b;
+    ;
+    display: flex;
+    text-align: center;
 }
-
-
-h2#whyWebsiteH2{
-  font-family: 'Kaushan Script', cursive;
-  font-weight: bold;
-  color: #2d545e;
+h2#whyWebsiteH2 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    color: #2d545e;
 }
-
-#aboutFinerBlue{
-  text-align: center;
-  padding: 3rem;
-  font-family: 'Kaushan Script', cursive;
-
+#aboutFinerBlue {
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Kaushan Script', cursive;
 }
-#logoAboutFinerBlue{
-  border-radius: 30px;  /* Rounded border */
-  width: 30%; /* Set a small width */
+#logoAboutFinerBlue {
+    border-radius: 30px;
+    /* Rounded border */
+    
+    width: 30%;
+    /* Set a small width */
 }
 #logoAboutFinerBlue:hover {
-  rgba(0, 140, 186, 45);
+    rgba(0,
+    140,
+    186,
+    45);
 }
-
-#descriptionFinerBlue{
-  padding:2rem;
-  color: black;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-
-
+#descriptionFinerBlue {
+    padding: 2rem;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
-#backgroundDescriptionFinerBlue{
-  background-color: #e6dbc9;
-  border-radius: 20px;
+#backgroundDescriptionFinerBlue {
+    background-color: #e6dbc9;
+    border-radius: 20px;
 }
-
-.backgroundAboutFinerBlue{
-  background-color: #8cbcd0;
-  padding: 2rem;
-
+.backgroundAboutFinerBlue {
+    background-color: #8cbcd0;
+    padding: 2rem;
 }
-div#backgroundDescriptionFinerBlue{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+div#backgroundDescriptionFinerBlue {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 /* WHy Us Section */
-#whyUsCard{
-  margin: 10px 0;
+#whyUsCard {
+    margin: 10px 0;
 }
-#whyUsCardHeader{
-  background-color: #6B7A8F;
-  font-family: 'Kaushan Script', cursive;
+#whyUsCardHeader {
+    background-color: #6B7A8F;
+    font-family: 'Kaushan Script', cursive;
+}
+.whyUsContent {
+    color: black;
+}
+#getStartedButton {
+    background-color: #e6dbc9;
+    color: #6B7A8F;
+}
 
-}
-.whyUsContent{
-  color:black;
-}
-#getStartedButton{
-  background-color: #e6dbc9;
-  color: #6B7A8F;
-}
 /* Why Us Section ends */
 
 /* Our Services */
-.homeOurServices{
-  text-align: center;
-  background-color: #8cbcd0;
-padding-bottom: 2rem;
+.homeOurServices {
+    text-align: center;
+    background-color: #b8d20b;
+    padding-bottom: 2rem;
 }
-
-#homeOurServicesTitle{
-  padding: 3rem 0;
-font-family: 'Kaushan Script', cursive;
+#homeOurServicesTitle {
+    padding: 3rem 0;
+    font-family: 'Kaushan Script', cursive;
 }
-.homeFirstService{
-  margin: 1.2rem;
-  background-color: #393f4d;
-  color: white;
+.homeFirstService {
+    margin: 1.2rem;
+    background-color: #393f4d;
+    color: white;
 }
-.homeSecondService{
-margin: 1.2rem;
+.homeSecondService {
+    margin: 1.2rem;
 }
-.homeThirdService{
-  margin: 1.2rem;
-background-color: #393f4d;
-color: white;
-
+.homeThirdService {
+    margin: 1.2rem;
+    background-color: #393f4d;
+    color: white;
 }
-div.card{
-  box-shadow: 5px 5px 5px #393f4d;
+div.card {
+    box-shadow: 5px 5px 5px #393f4d;
 }
-.icon-custom{
-  font-size: 2rem;
+.icon-custom {
+    font-size: 2rem;
 }
-.homeServiceTitle{
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+.homeServiceTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
-
 
 /* Our Services ends */
+
 /* Contact us */
-.homeContactCard{
-  background-color: white;
-  padding: 3rem;
-  border-radius: 20px;
-  margin: 2rem;
+.homeContactCard {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    margin: 2rem;
+}
+#homeContactusCard {
+    padding: 3rem 0;
+    font-family: 'Kaushan Script', cursive;
+}
+.homeContactUsContent {
+    font-family: 'Roboto', sans-serif;
 }
 
-#homeContactusCard{
-  padding: 3rem 0;
-font-family: 'Kaushan Script', cursive;
-}
-
-.homeContactUsContent{
-  font-family: 'Roboto', sans-serif;
-}
 /* End of Contact Us */
 
 /* Footer */
-footer{
-  text-align: center;
+footer {
+    text-align: center;
+}
+.footer {
+    background-color: #393f4d;
+    padding: 5px;
+    color: white;
+}
 
-}
-.footer{
-  background-color: #393f4d;
-  padding: 5px;
-  color: white;
-}
 /* End of Footer */
 
 /* Extra small devices (phones, 900px and down) */
-@media only screen and (max-width: 900px) {
-  #homeFirstFontSub{
-    font-size: 1.5rem !important;
-    font-weight:lighter !important;
-    font-family: 'Kaushan Script', cursive;
-    color: white;
-    /* background-color: #393f4d; */
-    opacity: 0.7;
-    border-radius: 1.2rem;
-    margin-top: 1.5rem;
-    align-items: center;
-  }
-  #homeFirstFont{
-    color: #1E90FF;
-  }
 
-  #webBrand{
-    color: white;
-  }
-
-  .whyWebsite{
-    font-family: 'Roboto', sans-serif;
-    color: black;
-
-    padding:5rem 2rem 2rem 2rem;
-    background-color:#fceed1;
-    display: flex;
-  text-align: center;
-
-  }
-
-}
-
-
+/* @media only screen and (max-width: 900px) {
+    #homeFirstFontSub {
+        font-size: 1.2rem !important;
+        font-weight: lighter !important;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        background-color: #393f4d;
+        opacity: 0.7;
+        border-radius: 1.2rem;
+        height: 2rem;
+        align-items: center;
+    }
+    
+    .whyWebsite {
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        padding: 5rem;
+        background-color: #fceed1;
+        display: flex;
+        text-align: center;
+    }
+} */
+*/
 /* End of Home Page Styling */
 
 /* Start of Services Page */
-#services{
-  text-align: center;
+#services {
+    text-align: center;
 }
-.boxOurServices{
-
+.boxOurServices {}
+#ourServicesTitle {
+    text-align: center;
+    padding: 3rem 0;
+    font-family: 'Kaushan Script', cursive;
 }
-
-#ourServicesTitle{
-  text-align: center;
-  padding: 3rem 0;
-  font-family: 'Kaushan Script', cursive;
+.firstService {
+    justify-content: center;
+    margin: 1.2rem;
+    background-color: #393f4d;
+    color: white;
 }
-.firstService{
-  justify-content: center;
-  margin: 1.2rem;
-  background-color: #393f4d;
-  color: white;
+.secondService {
+    margin: 1.2rem;
 }
-.secondService{
-margin: 1.2rem;
+.thirdService {
+    margin: 1.2rem;
+    background-color: #393f4d;
+    color: white;
 }
-.thirdService{
-  margin: 1.2rem;
-background-color: #393f4d;
-color: white;
+.serviceTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
-.serviceTitle{
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+.serviceIconCustom {
+    justify-content: center;
+    text-align: center !important;
+    font-size: 2rem;
 }
-
-.serviceIconCustom{
-  justify-content: center;
-  text-align: center !important;
-  font-size: 2rem;
-}
-.serviceTitle{
-  text-align: center;
+.serviceTitle {
+    text-align: center;
 }
 
 /* End of Services Page */
 
 /* Start of Contact Us Page styling */
-.backgroundOfContactForm{
-  background-color: #05386B;
-  margin-top: 2rem;
-  border-radius: 20px 20px 0 0;
+.backgroundOfContactForm {
+    background-color: #05386B;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0 0;
 }
-#leftOfContactForm{
-  font-family: 'Kaushan Script', cursive;
-  text-align: center;
- justify-content: center;
- color:white;
- padding-top: 7rem;
+#leftOfContactForm {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 7rem;
 }
-#contactForm{
-  background-color: white;
-  border-radius: 20px;
-  padding: 2rem;
-  margin: 2rem;
+#contactForm {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem;
 }
-#contactusCard{
-  font-family: 'Kaushan Script', cursive;
-}
-#contactAddress{
-  margin-top: 5rem;
-
+#contactAddress {
+    margin-top: 5rem;
 }
