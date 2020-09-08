@@ -77,7 +77,7 @@ a.no-link-color {
 .whyWebsite {
     font-family: 'Roboto', sans-serif;
     color: black;
-    padding: 5rem 20rem;
+    padding: 5rem 3rem;
     background-color: #b8d20b;
     ;
     display: flex;
@@ -87,6 +87,10 @@ h2#whyWebsiteH2 {
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
     color: #2d545e;
+}
+
+.why-website-wave{
+    background-color: #b8d20b;
 }
 #aboutFinerBlue {
     text-align: center;
@@ -117,7 +121,7 @@ h2#whyWebsiteH2 {
     border-radius: 20px;
 }
 .backgroundAboutFinerBlue {
-    background-color: #8cbcd0;
+    background-color: #8A3FFC;
     padding: 2rem;
 }
 div#backgroundDescriptionFinerBlue {
@@ -125,17 +129,38 @@ div#backgroundDescriptionFinerBlue {
 }
 
 /* WHy Us Section */
-#whyUsCard {
-    margin: 10px 0;
+.outside-why-us{
+    background-color: #8A3FFC;
 }
-#whyUsCardHeader {
-    background-color: #6B7A8F;
+.why-us {
+    color:#b8d20b;
+    background: url('../image/blob2.svg') no-repeat ;
+    background-size: auto ;
+    background-position: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.inside-why-us{
+    padding: 5rem 0;
+}
+.why-us-title {
+   
+    text-align: center;
+    background-size: contain;
     font-family: 'Kaushan Script', cursive;
 }
-.whyUsContent {
-    color: black;
+.why-us-content {
+    font-family: 'Raleway', sans-serif ;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+   
 }
 #getStartedButton {
+    margin-top: 4rem;
     background-color: #e6dbc9;
     color: #6B7A8F;
 }
@@ -176,11 +201,21 @@ div.card {
     font-weight: bold;
 }
 
+.services-wave{
+    background-color: #b8d20b;
+}
 /* Our Services ends */
 
 /* Contact us */
+#homeContact{
+    background-color: #8A3FFC;
+    color:white;
+}
+.home-contact-us{
+    background-color: #8A3FFC;
+}
 .homeContactCard {
-    background-color: white;
+    background-color: #8A3FFC;
     padding: 3rem;
     border-radius: 20px;
     margin: 2rem;
@@ -200,7 +235,7 @@ footer {
     text-align: center;
 }
 .footer {
-    background-color: #393f4d;
+    background-color: #8A3FFC;
     padding: 5px;
     color: white;
 }
@@ -240,6 +275,7 @@ footer {
 }
 .boxOurServices {}
 #ourServicesTitle {
+    color: #8A3FFC;
     text-align: center;
     padding: 3rem 0;
     font-family: 'Kaushan Script', cursive;
@@ -247,15 +283,16 @@ footer {
 .firstService {
     justify-content: center;
     margin: 1.2rem;
-    background-color: #393f4d;
+    background-color: #FF0066;
     color: white;
 }
 .secondService {
+    background-color: #E8DAFF;
     margin: 1.2rem;
 }
 .thirdService {
     margin: 1.2rem;
-    background-color: #393f4d;
+    background-color: #FF0066;
     color: white;
 }
 .serviceTitle {
