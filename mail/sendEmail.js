@@ -1,46 +1,46 @@
-const nodemailer = require("nodemailer");
-var mailgun = require('mailgun-js');
-const express = require("express");
-const bodyParser = require("body-parser");
-const router = express.Router();
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SendPi);
 
-const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+const sendMail = (req, res, next)=>{
 
-router.post('/', function(req, res){
-  const output = `
-  <p>You Have a new Forms Entry</p>
-  <h3>Title: ${req.body.messageSubject}</h3>
-  <h3>Contact Details</h3>
-  <ul>
-    <li>Name: ${req.body.name}</li>
-    <li>Email: ${req.body.email}</li>
-  </ul>
-  <h3>Message</h3>
-  <p>${req.body.message}</p>
-  `;
-const title = `${req.body.messageSubject}`
+const name = req.body.name;
+const emailAdd = req.body.email;
+const messageSubject = req.body.messageSubject;
+const message = req.body.message
 
-  var api_key = process.env.api_key;
-  var domain = process.env.domain;
-  var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+const output = `
+<h2>Sender: </h2> ${name}
+<br>
+<h2>EmailID: </h2> ${emailAdd}
+<br>
+<h2>Subject: </h2> ${messageSubject}
+<br>
+<h2>Message: </h2> ${message}
+`
 
-  var data = {
-    from: process.env.from,
-    to: process.env.to,
-    subject: "Data entry from FinerBlue contact-form",
+
+  const msg = {
+    to: 'contact@finerblue.com',
+    from: 'khoshow.developer@gmail.com', // Use the email address or domain you verified above
+    subject:"New contact: "+ name + " has a subject: " + messageSubject,
+    text: 'Hello',
     html: output
   };
-
-  mailgun.messages().send(data, function (error, body) {
-    if(error){
-      console.log(error);
-    }else{
-
-      res.render("contact", {success: "Thank you. Your message has been successfully sent! One of our team members will contact you soon."});
+  
+  //ES8
+  (async () => {
+    try {
+      await sgMail.send(msg);
+    } catch (error) {
+      console.error(error);
+  
+      if (error.response) {
+        console.error(error.response.body)
+      }
+    }finally{
+      res.redirect("/Confirmation")
     }
-  });
+  })();
+}
 
-});
-
-module.exports = router;
+module.exports = sendMail
