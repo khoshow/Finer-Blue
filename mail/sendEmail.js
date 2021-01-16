@@ -1,46 +1,70 @@
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SendPi);
-
-const sendMail = (req, res, next)=>{
-
-const name = req.body.name;
-const emailAdd = req.body.email;
-const messageSubject = req.body.messageSubject;
-const message = req.body.message
-
-const output = `
-<h2>Sender: </h2> ${name}
-<br>
-<h2>EmailID: </h2> ${emailAdd}
-<br>
-<h2>Subject: </h2> ${messageSubject}
-<br>
-<h2>Message: </h2> ${message}
-`
+const dotenv = require("dotenv");
 
 
-  const msg = {
-    to: 'contact@finerblue.com',
-    from: 'khoshow.developer@gmail.com', // Use the email address or domain you verified above
-    subject:"New contact: "+ name + " has a subject: " + messageSubject,
-    text: 'Hello',
-    html: output
-  };
+dotenv.config({path: './config/config.env'})
+
+
+const sgMail = require("@sendgrid/mail");
+const path = require("path");
+
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+const contactUs = (req, res, next) => {
+
+
+const msg = {
+
+  from: 'khoshow.developer@gmail.com', // Use the email address or domain you verified above
   
-  //ES8
-  (async () => {
-    try {
-      await sgMail.send(msg);
-    } catch (error) {
-      console.error(error);
-  
-      if (error.response) {
-        console.error(error.response.body)
-      }
-    }finally{
-      res.redirect("/Confirmation")
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "ashuli@finerblue.com"
+        }
+        
+       
+        
+      ],
+      "cc": [
+        {
+          "email": "khoshow.official@gmail.com"
+        }
+      ],
+     
     }
-  })();
-}
+  ], 
+  
+ 
+  subject: "FinerBlue got a query from " + req.body.name,
+  html: `<h2> Name:  </h2> ` +req.body.name + 
+         `<h2><br> Phone:  </h2>`  +req.body.messageSubject+
+         `<h2><br> Email:  </h2>`  +req.body.email+
+         `<h2><br> Message: </h2> `  +req.body.message
+  
+};
 
-module.exports = sendMail
+//ES8
+(async () => {
+  try {
+    await sgMail.send(msg);
+  } catch (error) {
+    console.error(error);
+ 
+    if (error.response) {
+      console.error(error.response.body)
+    }
+   
+  }
+
+ 
+  res.render("confirmation", {
+    pageTitle: "Message Sent",
+    messageSent: "Message has been sent succesfully"
+  });
+})();
+
+};
+
+ module.exports = contactUs;
